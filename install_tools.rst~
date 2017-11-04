@@ -1,0 +1,44 @@
+Install the tools
+=================
+
+Required softwares
+##################
+
+* PHP
+* MariaDB or MySQL
+* Nginx
+
+Install the softwares
+#####################
+
+Example on Debian 9 (stretch) : ::
+
+	apt-get --assume-yes install nginx mariadb-server php7-cli php7-fpm php7-mysql php7-gd
+
+Start on boot
+#############
+
+Make sure that they will start on boot : ::
+
+	systemctl enable mariadb
+	systemctl enable nginx
+
+Secure your server
+##################
+
+Type the following command : ::
+
+	mysql_secure_installation
+
+If you have not set a password already, just type enter and say no to change the root password.
+Otherwise, a password generator can help you : https://lastpass.com/generatepassword.php
+
+And answer the questions as follow  (type y for yes and n for no) : ::
+
+	Change the root password? Yes
+	Remove anonymous users? Yes
+	Disallow root login remotely? Yes
+	Remove test database and access to it? Yes
+	Reload privilege tables now? Yes
+	
+Congratulations, you have accomplished a big step.
