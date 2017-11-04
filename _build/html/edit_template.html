@@ -99,7 +99,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="configure_template.html">Configure the template</a></li>
 <li class="toctree-l1"><a class="reference internal" href="website_architecture.html">Website architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content_types.html">Content types</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Edition :</span></p>
 <ul class="current">
@@ -107,7 +106,13 @@
 <li class="toctree-l1"><a class="reference internal" href="edit_categories.html">Edit the categories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_item.html">Edit an item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_menu.html">Edit the menu</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Edit the template</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Edit the template</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#html-and-css">HTML and CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html-css-colors">HTML/CSS colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-the-background-color-of-the-header">Change the background color of the header</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-the-links-color">Change the links’ color</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -173,6 +178,59 @@
             
   <div class="section" id="edit-the-template">
 <h1>Edit the template<a class="headerlink" href="#edit-the-template" title="Permalink to this headline">¶</a></h1>
+<p>In the dashboard, pass over “File Management” and click “View/edit templates” then click on “affiliatews” to edit the affiliate website template.</p>
+<p>This picture illustrates what you should see. It may vary according to the version of the template or the configuration of your website.</p>
+<img alt="_images/edit-template.jpg" src="_images/edit-template.jpg" />
+<p>To change the design of your website, click on “css” and then “design.css”.</p>
+<p>You should reach the online editor as on the following picture.</p>
+<img alt="_images/edit-design-css.jpg" src="_images/edit-design-css.jpg" />
+<div class="section" id="html-and-css">
+<h2>HTML and CSS<a class="headerlink" href="#html-and-css" title="Permalink to this headline">¶</a></h2>
+<p>If you have absolutely no clue about HTML, we recommand you to read this <a class="reference external" href="http://www.htmldog.com/guides/html/beginner/">http://www.htmldog.com/guides/html/beginner/</a></p>
+<p>If you have absolutely no clue about CSS, we recommand you to read this <a class="reference external" href="http://www.htmldog.com/guides/css/">http://www.htmldog.com/guides/css/</a></p>
+</div>
+<div class="section" id="html-css-colors">
+<h2>HTML/CSS colors<a class="headerlink" href="#html-css-colors" title="Permalink to this headline">¶</a></h2>
+<p>To understand how a color is represented in css or html, we recommand you to read the colors tutorial on <a class="reference external" href="https://www.w3schools.com/colors/default.asp">https://www.w3schools.com/colors/default.asp</a></p>
+<p>To easily find an appropriate color and convert it to the html/css code, use an HTML Color picker : <a class="reference external" href="http://htmlcolorcodes.com/color-picker/">http://htmlcolorcodes.com/color-picker/</a></p>
+</div>
+<div class="section" id="change-the-background-color-of-the-header">
+<h2>Change the background color of the header<a class="headerlink" href="#change-the-background-color-of-the-header" title="Permalink to this headline">¶</a></h2>
+<p>In the online editor, find :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">header</span> <span class="o">.</span><span class="n">title</span> <span class="p">{</span>     <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#333;    [...] }</span>
+</pre></div>
+</div>
+<p>change the code #333 with the color of your choice.</p>
+<p>Note : the code #333 might be different. Just change what comes between “background-color:” and “;”</p>
+<p>For instance for a red background color :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">header</span> <span class="o">.</span><span class="n">title</span> <span class="p">{</span>     <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c1">#ff0000;    [...] }</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="change-the-links-color">
+<h2>Change the links’ color<a class="headerlink" href="#change-the-links-color" title="Permalink to this headline">¶</a></h2>
+<p>Find or add the following code :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="p">{</span>     <span class="n">color</span><span class="p">:</span> <span class="c1">#11ee11; }</span>
+</pre></div>
+</div>
+<p>The HTML color might be different. Replace the HTML color by the color of your choice</p>
+<p>Do the same for the following code if you want to change the color when passing over with the mouse :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">a</span><span class="p">:</span><span class="n">hover</span> <span class="p">{</span>     <span class="n">color</span><span class="p">:</span> <span class="c1">#aaffaa; }</span>
+</pre></div>
+</div>
+<p>You can add as well if you want to add or remove the underline of the link :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">underline</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>For instance you can add set it this way to remove the underline to a link but add it when passing over with the mouse :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="p">{</span>     <span class="n">color</span><span class="p">:</span> <span class="c1">#11ee11;     text-decoration: none; }a:hover {     color: #aaffaa;     text-decoration: underline; }</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 

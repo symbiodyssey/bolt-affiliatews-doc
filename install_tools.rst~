@@ -33,12 +33,12 @@ Type the following command : ::
 If you have not set a password already, just type enter and say no to change the root password.
 Otherwise, a password generator can help you : https://lastpass.com/generatepassword.php
 
-And answer the questions as follow  (type y for yes and n for no) : ::
+And answer the questions as follow  (type y for yes and n for no) :
 
-	Change the root password? Yes
-	Remove anonymous users? Yes
-	Disallow root login remotely? Yes
-	Remove test database and access to it? Yes
-	Reload privilege tables now? Yes
+#. Change the root password? Yes
+#. Remove anonymous users? Yes
+#. Disallow root login remotely? Yes
+#. Remove test database and access to it? Yes
+#. Reload privilege tables now? Yes
 	
 Congratulations, you have accomplished a big step.
