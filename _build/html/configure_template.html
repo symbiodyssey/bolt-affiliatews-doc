@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Configure the template &#8212; Bolt affiliate website template 1.5 documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -24,16 +24,24 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Website architecture" href="website_architecture.html" />
-    <link rel="prev" title="Install the template" href="install_template.html" />
-   
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="prev" title="Install the template" href="install_template.html" /> 
   </head>
   <body>
-  
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="website_architecture.html" title="Website architecture"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="install_template.html" title="Install the template"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Bolt affiliate website template 1.5 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -42,9 +50,63 @@
             
   <div class="section" id="configure-the-template">
 <h1>Configure the template<a class="headerlink" href="#configure-the-template" title="Permalink to this headline">¶</a></h1>
-<p>The template requires some extensions. <a class="reference internal" href="install_template.html#required-extensions"><span class="std std-ref">Required extensions</span></a>.</p>
+<p>The template requires some extensions : <a class="reference internal" href="install_template.html#required-extensions"><span class="std std-ref">Required extensions</span></a>.</p>
 <div class="section" id="set-the-labels">
 <h2>Set the labels<a class="headerlink" href="#set-the-labels" title="Permalink to this headline">¶</a></h2>
+<p>In the dashboard in the menu on the left, go to Extra -&gt; Label translations.</p>
+<p>Edit the labels as follow :</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Label</th>
+<th class="head">EN</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>details</td>
+<td>Details</td>
+</tr>
+<tr class="row-odd"><td>get-it</td>
+<td>Get it</td>
+</tr>
+<tr class="row-even"><td>show-more</td>
+<td>Show more</td>
+</tr>
+</tbody>
+</table>
+<p>You can of course change the translations if you want.</p>
+</div>
+<div class="section" id="create-the-blocks">
+<h2>Create the Blocks<a class="headerlink" href="#create-the-blocks" title="Permalink to this headline">¶</a></h2>
+<p>The template uses a few blocks that helps modify some specific elements of the website.</p>
+<div class="section" id="logo">
+<h3>Logo<a class="headerlink" href="#logo" title="Permalink to this headline">¶</a></h3>
+<p>Create a block called Logo with the slug set as /block/logo.</p>
+<p>Upload an image that will be visible on the top left corner.</p>
+</div>
+<div class="section" id="banner">
+<h3>Banner<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h3>
+<p>Create a block called Banner with the slug set as /block/banner.</p>
+<p>Upload an image that will be visible if the index.twig file is used.</p>
+</div>
+<div class="section" id="error">
+<h3>404 Error<a class="headerlink" href="#error" title="Permalink to this headline">¶</a></h3>
+<p>Create a block called 404 Not found with the slug set as /block/404-not-found.</p>
+<p>In the content you can write your own message that will be displayed if a visitor access a page that does not exist.</p>
+</div>
+<div class="section" id="footer">
+<h3>Footer<a class="headerlink" href="#footer" title="Permalink to this headline">¶</a></h3>
+<p>Create a block called Footer with the slug set as /block/footer.</p>
+<p>In the content you can write the footer of your website that will be displayed on every page.</p>
+</div>
+<div class="section" id="category-image">
+<h3>Category image<a class="headerlink" href="#category-image" title="Permalink to this headline">¶</a></h3>
+<p>Create a block called Footer with the slug set as /block/category-image.</p>
+<p>Upload an image that will be the default picture of a category if non is uploaded.</p>
+</div>
 </div>
 </div>
 
@@ -53,15 +115,13 @@
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="install_template.html" title="previous chapter">Install the template</a></li>
-      <li>Next: <a href="website_architecture.html" title="next chapter">Website architecture</a></li>
-  </ul></li>
-</ul>
-</div>
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="install_template.html"
+                        title="previous chapter">Install the template</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="website_architecture.html"
+                        title="next chapter">Website architecture</a></p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
@@ -76,20 +136,24 @@
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2017, symbiodyssey.com.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="_sources/configure_template.rst.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="website_architecture.html" title="Website architecture"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="install_template.html" title="Install the template"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Bolt affiliate website template 1.5 documentation</a> &#187;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, symbiodyssey.com.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.5.
+    </div>
   </body>
 </html>
