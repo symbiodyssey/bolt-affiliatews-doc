@@ -6,6 +6,8 @@ The template offers three different architectures.
 Default mode
 ############
 
+With this architecture you don't have to configure anything. The pages that you will create will be displayed as cards on the first page and links to see the pages.
+
 Items and categories
 #####################
 
