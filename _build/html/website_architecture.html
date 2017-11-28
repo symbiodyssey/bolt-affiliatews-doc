@@ -36,7 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="Bolt affiliate website template 1.5 documentation" href="index.html"/>
-        <link rel="next" title="Content types" href="content_types.html"/>
+        <link rel="next" title="Google Analytics" href="google_analytics.html"/>
         <link rel="prev" title="Configure the template" href="configure_template.html"/> 
 
   
@@ -96,16 +96,30 @@
 <li class="toctree-l1"><a class="reference internal" href="install_bolt.html">Install Bolt CM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install_template.html">Install the template</a></li>
 </ul>
-<p class="caption"><span class="caption-text">After installation :</span></p>
+<p class="caption"><span class="caption-text">Post installation :</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="configure_template.html">Configure the template</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Website architecture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#default-mode">Default mode</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#items-and-categories">Items and categories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#items-categories-and-reviews">Items, categories and reviews</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#default-mode">Default mode</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-activate">How to activate</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="content_types.html">Content types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#items-and-categories">Items and categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">How to activate</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#items-categories-and-reviews">Items, categories and reviews</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">How to activate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration :</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="google_analytics.html">Google Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="related_content.html">Related content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sub_category.html">Sub category</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Edition :</span></p>
 <ul>
@@ -114,6 +128,7 @@
 <li class="toctree-l1"><a class="reference internal" href="edit_item.html">Edit an item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_menu.html">Edit the menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_template.html">Edit the template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_footer.html">Edit the footer</a></li>
 </ul>
 
             
@@ -183,6 +198,14 @@
 <div class="section" id="default-mode">
 <h2>Default mode<a class="headerlink" href="#default-mode" title="Permalink to this headline">¶</a></h2>
 <p>With this architecture you don’t have to configure anything. The pages that you will create will be displayed as cards on the first page and links to see the pages.</p>
+<div class="section" id="how-to-activate">
+<h3>How to activate<a class="headerlink" href="#how-to-activate" title="Permalink to this headline">¶</a></h3>
+<p>This is the default mode you don’t have to do anything. If you want to come back to this mode, in the dashboard, in the menu on the left go to File management -&gt; view/edit templates -&gt; affiliatews -&gt; theme.yml</p>
+<p>Set the variable ws_mode to 1 :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ws_mode</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="items-and-categories">
 <h2>Items and categories<a class="headerlink" href="#items-and-categories" title="Permalink to this headline">¶</a></h2>
@@ -198,12 +221,28 @@
 <p>Based on these examples, it’s very easy to create new ones that suit exaclty your needs such as brand, size, color, …</p>
 <p>Moreover, every item can be tagged and a menu per category can be set to show the categories for a very quick and friendly navigation.</p>
 <p>Our content types are available on : <a class="reference external" href="https://github.com/symbiodyssey/bolt-affiliate-template/tree/master/contentTypes">https://github.com/symbiodyssey/bolt-affiliate-template/tree/master/contentTypes</a></p>
-<p>The official documentation explains how to use content types in Bolt : <a class="reference external" href="https://docs.bolt.cm/3.3/contenttypes/intro">https://docs.bolt.cm/3.3/contenttypes/intro</a></p>
+<p>The official documentation explains how to use content types in Bolt : <a class="reference external" href="https://docs.bolt.cm/3.4/contenttypes/intro">https://docs.bolt.cm/3.4/contenttypes/intro</a></p>
 <p>With this architecture if a visitor clicks on an item he/she will be directly redirected to an external website of your choice.</p>
+<div class="section" id="id1">
+<h3>How to activate<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>To activate this mode, in the dashboard, in the menu on the left go to File management -&gt; view/edit templates -&gt; affiliatews -&gt; theme.yml</p>
+<p>Set the variable ws_mode to 2 :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ws_mode</span><span class="p">:</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="items-categories-and-reviews">
 <h2>Items, categories and reviews<a class="headerlink" href="#items-categories-and-reviews" title="Permalink to this headline">¶</a></h2>
 <p>This architecture is very similar to the previous one except that clicking on a item will lead first to a review page where one can read a long and detailed article about the item.</p>
+<div class="section" id="id2">
+<h3>How to activate<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>In the dashboard, in the menu on the left go to File management -&gt; view/edit templates -&gt; affiliatews -&gt; theme.yml</p>
+<p>Set the variable ws_mode to 3 :</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ws_mode</span><span class="p">:</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 
@@ -217,7 +256,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="content_types.html" class="btn btn-neutral float-right" title="Content types" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="google_analytics.html" class="btn btn-neutral float-right" title="Google Analytics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="configure_template.html" class="btn btn-neutral" title="Configure the template" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -96,7 +96,7 @@
 <li class="toctree-l1"><a class="reference internal" href="install_bolt.html">Install Bolt CM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="install_template.html">Install the template</a></li>
 </ul>
-<p class="caption"><span class="caption-text">After installation :</span></p>
+<p class="caption"><span class="caption-text">Post installation :</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Configure the template</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#set-the-labels">Set the labels</a></li>
@@ -104,14 +104,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#logo">Logo</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#banner">Banner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#error">404 Error</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#footer">Footer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#category-image">Category image</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="website_architecture.html">Website architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content_types.html">Content types</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Configuration :</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="google_analytics.html">Google Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="related_content.html">Related content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sub_category.html">Sub category</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Edition :</span></p>
 <ul>
@@ -120,6 +123,7 @@
 <li class="toctree-l1"><a class="reference internal" href="edit_item.html">Edit an item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_menu.html">Edit the menu</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_template.html">Edit the template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_footer.html">Edit the footer</a></li>
 </ul>
 
             
@@ -188,7 +192,7 @@
 <p>The template requires some extensions : <a class="reference internal" href="install_template.html#required-extensions"><span class="std std-ref">Required extensions</span></a>.</p>
 <div class="section" id="set-the-labels">
 <h2>Set the labels<a class="headerlink" href="#set-the-labels" title="Permalink to this headline">¶</a></h2>
-<p>In the dashboard in the menu on the left, go to Extra -&gt; Label translations.</p>
+<p>In the dashboard in the menu on the left, go to Label translations.</p>
 <p>Edit the labels as follow :</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -210,9 +214,12 @@
 <tr class="row-even"><td>show-more</td>
 <td>Show more</td>
 </tr>
+<tr class="row-odd"><td>related_content</td>
+<td>Related content</td>
+</tr>
 </tbody>
 </table>
-<p>You can of course change the translations if you want.</p>
+<p>You can of course change the translation if you want.</p>
 </div>
 <div class="section" id="create-the-blocks">
 <h2>Create the Blocks<a class="headerlink" href="#create-the-blocks" title="Permalink to this headline">¶</a></h2>
@@ -231,16 +238,6 @@
 <h3>404 Error<a class="headerlink" href="#error" title="Permalink to this headline">¶</a></h3>
 <p>Create a block called 404 Not found with the slug set as /block/404-not-found.</p>
 <p>In the content you can write your own message that will be displayed if a visitor access a page that does not exist.</p>
-</div>
-<div class="section" id="footer">
-<h3>Footer<a class="headerlink" href="#footer" title="Permalink to this headline">¶</a></h3>
-<p>Create a block called Footer with the slug set as /block/footer.</p>
-<p>In the content you can write the footer of your website that will be displayed on every page.</p>
-</div>
-<div class="section" id="category-image">
-<h3>Category image<a class="headerlink" href="#category-image" title="Permalink to this headline">¶</a></h3>
-<p>Create a block called Footer with the slug set as /block/category-image.</p>
-<p>Upload an image that will be the default picture of a category if non is uploaded.</p>
 </div>
 </div>
 </div>

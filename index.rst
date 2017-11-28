@@ -15,11 +15,18 @@ This documentation will help you to install Bolt.cm, and our template for affili
     
 .. toctree::
     :maxdepth: 2
-    :caption: After installation :
+    :caption: Post installation :
 
     configure_template
     website_architecture
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Configuration :
+    
+    google_analytics
+    related_content
+    sub_category
 
 .. toctree::
     :maxdepth: 2
@@ -30,6 +37,7 @@ This documentation will help you to install Bolt.cm, and our template for affili
     edit_item
     edit_menu
     edit_template
+    edit_footer
 
 Find the template on https://github.com/symbiodyssey/bolt-affiliate-template
 This template belongs to our starter kits : https://starterkits.symbiodyssey.com/kit/affiliate-website

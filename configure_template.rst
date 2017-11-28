@@ -6,19 +6,20 @@ The template requires some extensions : :ref:`required-extensions`.
 Set the labels
 ##############
 
-In the dashboard in the menu on the left, go to Extra -> Label translations.
+In the dashboard in the menu on the left, go to Label translations.
 
 Edit the labels as follow :
 
-========= ========
-Label     EN
-========= ========
-details   Details
-get-it    Get it
-show-more Show more
-========= ========
+=============== ========
+Label           EN
+=============== ========
+details         Details
+get-it          Get it
+show-more       Show more
+related_content Related content
+=============== ========
 
-You can of course change the translations if you want.
+You can of course change the translation if you want.
 
 Create the Blocks
 #################
@@ -45,17 +46,3 @@ Upload an image that will be visible if the index.twig file is used.
 Create a block called 404 Not found with the slug set as /block/404-not-found.
 
 In the content you can write your own message that will be displayed if a visitor access a page that does not exist.
-
-Footer
-******
-
-Create a block called Footer with the slug set as /block/footer.
-
-In the content you can write the footer of your website that will be displayed on every page.
-
-Category image
-**************
-
-Create a block called Footer with the slug set as /block/category-image.
-
-Upload an image that will be the default picture of a category if non is uploaded.

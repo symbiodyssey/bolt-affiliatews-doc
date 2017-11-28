@@ -5,7 +5,7 @@ Install extensions
 ##################
 
 To install new extensions please refer to the official documentation :
-https://docs.bolt.cm/3.3/extensions/introduction#installing-new-extensions
+https://docs.bolt.cm/3.4/extensions/introduction#installing-new-extensions
 
 .. _required-extensions:
 
@@ -37,15 +37,15 @@ Related Content By Tags  xiaohutai/bolt-relatedcontentbytags >=3.0.1   Show rela
 Install the template
 ####################
 
-Manual installation
-*******************
 
 To install new extensions please refer to the official documentation :
-https://docs.bolt.cm/3.3/extensions/introduction#installing-new-extensions
+https://docs.bolt.cm/3.4/extensions/introduction#installing-new-extensions
 
 The template is available in the Bolt market : https://market.bolt.cm/view/symbiodyssey/affiliatews-theme
 
-You can install it as an extension in Bolt as you do for the plugins. Code : symbiodyssey/affiliatews-theme
+You can install it as an extension in Bolt as you do for the plugins. Code : ::
+
+	symbiodyssey/affiliatews-theme
 
 In the dashboard in the menu, go to Configuration (under settings) -> Main configuration
 
@@ -54,7 +54,4 @@ change the theme to : ::
 	theme: affiliatews
 
 Before you can use the template you need to configure it : :doc:`configure_template`
-
-Automatic installation
-**********************
 
